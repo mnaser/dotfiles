@@ -3,3 +3,5 @@ cask "font-blex-mono-nerd-font"
 
 cask "iterm2"
 brew "starship"
+
+brew "neovim"
