@@ -1,5 +1,8 @@
+set nocompatible
+
 " Plugins
 call plug#begin()
+Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
 
 Plug 'williamboman/mason.nvim'
@@ -28,9 +31,3 @@ mason_lspconfig.setup_handlers({
   end
 })
 EOF
-
-" Ansible
-au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible
-au BufRead,BufNewFile */roles/*/tasks/*.yml set filetype=yaml.ansible
-au BufRead,BufNewFile */roles/*/handlers/*.yml set filetype=yaml.ansible
-
